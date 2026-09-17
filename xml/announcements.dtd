@@ -1,0 +1,11 @@
+<!-- DTD for the CampusHub announcements XML feed -->
+<!-- Defines the required structure so the generated XML can be validated -->
+
+<!ELEMENT announcements (announcement*)>
+
+<!ELEMENT announcement (title, description, published_at)>
+<!ATTLIST announcement id CDATA #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT published_at (#PCDATA)>
